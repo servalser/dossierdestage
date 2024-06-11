@@ -8,22 +8,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="accueil">
+    <div class="navbar">
+      <nav>
+        <a href="#accueil"><strong>DOSSIER DE STAGE</strong></a>
+        <div class="navlist">
+          <ul>
+            <li><a href="#sommaire">SOMMAIRE</a></li>
+            <li><a href="#Page1">ORGANISATION</a></li>
+            <li><a href="#Page2">COMMERCE</a></li>
+            <li><a href="#PGI">PGI</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="accueil" class="accueil">
       <header>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="DOSSIERDESTAGE" style="text-align: center">
-          <h1>DOSSIER DE STAGE</h1>
-          <div class="MAIRIEDECUERS">
-            <h2>MAIRIE DE CUERS</h2>
-          </div>
-        </div>
-        <div class="logocuers">
-          <img src="./img/logo blanc.png" alt="Logo de Cuers" width="65" />
-        </div>
       </header>
     </div>
-    <br>
     <div class="main">
+      <section class="pdg">
+      <section class="pdgfond">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="DOSSIERDESTAGE" style="text-align: center">
+        <h1>DOSSIER DE STAGE</h1>
+        <div class="MAIRIEDECUERS">
+          <h2>MAIRIE DE CUERS</h2>
+        </div>
+      </div>
+      </section>
+      </section>
+      <div id="sommaire" class="separator"></div>
       <main>
         <section>
           <div class="sommaire"
@@ -72,17 +86,13 @@
                 </li>
                 <br/>
                 <li><a href="#Page3" Présentation PGI>Présentation PGI</a></li>
-                <br/>
-                <li><a href="#Page4" Fiches analyses>Fiches analyses </a></li>
-                <br/>
-                <li><a href="#Page5" Annexes>Annexes</a></li>
               </ol>
             </div>
           </div>
         </section>
-        <div class="separator"></div>
+        <div class="separator" id="Page1"></div>
         <section>
-        <div class="Page1" id="Page1">
+        <div class="Page1" >
           <h2>Présentation organisationnelle</h2>
           <br>
           <div class="page1text">
@@ -136,9 +146,9 @@
             <br/>
           </div>
         </section>
-        <br> <br>
+        <div class="separator" id="Page2"></div>
         <section>
-          <div class="Page2" id="Page2">
+          <div class="Page2">
             <h2>Présentation commerciale</h2>
               <br/>
               <p>
@@ -157,6 +167,7 @@
               locaux, en entretenant les infrastructures publiques, et en
               veillant au bien-être général de la communauté. 
               </p>
+              <br>
               <p>
               Le budget de la
               mairie de Cuers, évalué à 15 millions d'euros, est alloué à
@@ -275,13 +286,13 @@
           </div>
           <br />
           <div>
-            <fieldset>
-              <label for="Légende">Légende :</label>
+            <div class="legende">
+              <label for="Légende"><strong>Légende :</strong></label>
               <p>
                 N/A : Non applicable à cette étape du processus. <br />Oui :
                 Activité comptable intégrée à cette étape.
               </p>
-            </fieldset>
+            </div>
           </div>
         </section>
         <br><br>
@@ -599,7 +610,7 @@
             </div>
           </div>
         </section>
-        <div class="separator"></div>
+        <div class="separator" id="PGI"></div>
         <section>
           <div class="PGI">
             <h2>Présentation du PGI</h2>
