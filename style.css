@@ -27,6 +27,12 @@ nav{
     width: 35px;
 }
 @media screen and (max-width: 800px) {
+    main{
+        margin: 0 5%;
+    }
+    .pdg{
+        margin: 0 5%;
+    }
     nav{
         padding: 0;
     }
@@ -71,9 +77,6 @@ nav{
         position: absolute;
         left: 15px;
         top: 15px;
-    }
-    main {
-        margin: 0 5%;
     }
 }
 .navbar .navlist ul{
@@ -183,22 +186,9 @@ body{
     text-align:justify;
     color: rgb(73, 55, 34);
 }
-header{
-    background: rgb(73, 55, 34);
-    height: 17px;
-    position: relative;
-    top: 0;
-
-}
-header img{
-    width: 35px;
-    position: absolute;
-    top: 20%;
-    left: 3%;
-    margin: 0 30px;
-}
 .pdg{
     background: url("./img/mairie18-modified.png") no-repeat center/cover;
+    margin: 0 15%;
     min-height: 89vh;
     max-height: 100vh;
     border-bottom-left-radius: 50px;
@@ -232,7 +222,7 @@ h2{
 main{
     min-height: 100vh;
     width: auto;
-    margin: 0 25%;
+    margin: 0 20%;
     margin-bottom: 2%;
 }
 h3{
@@ -332,29 +322,21 @@ iframe{
     border-radius: 30px;
     padding: 0 auto;
 }
-.tableau1{
-    border-radius: 10px;
-}
 .tableau{
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
-    border-radius: 10px;
 }
 table {
     width: 100%;
     border-collapse: collapse;
-    border-radius: 10px;
+    font-family: Arial, sans-serif;
 }
 th, td {
     border: 5px solid rgb(73, 55, 34);
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding: 8px;
     text-align: left;
 }
 .legende{
