@@ -16,15 +16,78 @@ nav{
     width: 100%;
     box-sizing: border-box;
 }
+.menu{
+    display: flex;
+}
+.navbar .menuhb{
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    width: 35px;
+}
+@media screen and (max-width: 800px) {
+    nav{
+        padding: 0;
+    }
+    .navbar .menuhb{
+        display: block;
+    }
+    .navlist {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(255, 248, 235, 0.351);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-left: 0;
+    }
+    .navlist ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navlist ul li a{
+        position: relative;
+        line-height: 350%;
+        font-weight: 750;
+        font-size: 20px;
+        background-color: rgb(255, 248, 235);
+        border: 5px solid rgb(73, 55, 34);
+        padding: 5 15%;
+        border-radius: 100px;
+        
+    }
+
+    a strong{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    main{
+        position: relative;
+        margin: 0;
+    }
+}
 .navbar .navlist ul{
     display: flex;
     justify-content: space-between;
 }
 .navbar .navlist ul li{
     margin: 0 30px;
+    
 }
 nav div ul li a{
     color: rgb(255, 248, 235);
+    font-weight: 650;
 }
 nav>a {
     outline: none;
@@ -136,7 +199,7 @@ header img{
     margin: 0 30px;
 }
 .pdg{
-    background: url("img/mairie18.jpeg") no-repeat center/cover;
+    background: url("./img/mairie18-modified.png") no-repeat center/cover;
     min-height: 89vh;
     max-height: 100vh;
     border-bottom-left-radius: 50px;
@@ -144,6 +207,7 @@ header img{
     border-bottom: 15px solid rgb(73, 55, 34) ;
     border-left: 15px solid rgb(73, 55, 34) ;
     border-right: 15px solid rgb(73, 55, 34) ;
+    border-top: 15px solid rgb(73, 55, 34) ;
 }
 .DOSSIERDESTAGE{
     background-color: rgba(255, 248, 235, 0.774);
@@ -154,7 +218,6 @@ header img{
     margin-top: -47px;
     padding-top: 15px;
     padding-bottom: 10px;
-    text-decoration: underline 10px rgba(255, 248, 235, 0.774) ;
 }
 
 h2{
@@ -325,6 +388,9 @@ iframe{
     width: auto;
     border-radius: 30px;
     padding: 0 auto;
+}
+.lienbug{
+    position: relative;
 }
 footer{
     background-color: rgb(241, 220, 177);
