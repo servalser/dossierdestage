@@ -72,9 +72,8 @@ nav{
         left: 15px;
         top: 15px;
     }
-    main{
-        position: relative;
-        margin: 0;
+    main {
+        margin: 0 5%;
     }
 }
 .navbar .navlist ul{
@@ -283,6 +282,35 @@ iframe{
     height: 80vh;
     width: 100%;
 }
+.org-chart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.level {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.level > div {
+    margin: 0 10px;
+}
+.box {
+    border: 3px solid rgb(73, 55, 34);
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+.sublevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sublevel > div {
+    margin: 5px 0;
+}
 .ressources{
     height: auto;
     width: auto;
@@ -304,13 +332,30 @@ iframe{
     border-radius: 30px;
     padding: 0 auto;
 }
+.tableau1{
+    border-radius: 10px;
+}
 .tableau{
     border-radius: 10px;
-    border: 5px solid rgb(73, 55, 34);
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+th, td {
+    border: 5px solid rgb(73, 55, 34);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: left;
 }
 .legende{
     border-radius: 10px;
