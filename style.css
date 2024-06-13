@@ -15,6 +15,8 @@ nav{
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
+    background-color: rgb(251, 240, 219);
+    border-bottom: 10px solid rgb(73, 55, 34);
 }
 .menu{
     display: flex;
@@ -193,10 +195,9 @@ body{
     max-height: 100vh;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    border-bottom: 15px solid rgb(73, 55, 34) ;
-    border-left: 15px solid rgb(73, 55, 34) ;
-    border-right: 15px solid rgb(73, 55, 34) ;
-    border-top: 15px solid rgb(73, 55, 34) ;
+    border-bottom: 10px solid rgb(73, 55, 34) ;
+    border-left: 10px solid rgb(73, 55, 34) ;
+    border-right: 10px solid rgb(73, 55, 34) ;
 }
 .DOSSIERDESTAGE{
     background-color: rgba(255, 248, 235, 0.774);
@@ -272,12 +273,21 @@ iframe{
     height: 80vh;
     width: 100%;
 }
+.stage{
+    color: rgb(73, 55, 34);
+}
 .org-chart {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+.org-chart em {
+    font-family: "DM Serif text", sans-serif;
+}
+.org-chart strong {
+    font-weight: 400;
 }
 .level {
     display: flex;
