@@ -35,6 +35,10 @@ nav{
 }
 
 @media screen and (max-width: 800px) {
+    .DOSSIERDESTAGE{
+        font-size: 1em
+    }
+    
     main{
         margin: 0 5%;
     }
