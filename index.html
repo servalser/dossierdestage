@@ -8,42 +8,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar" id="accueil">
-      <nav>
-        <a href="#accueil"><strong>DOSSIER DE STAGE</strong></a>
-        <div class="navlist">
-          <ul>
-            <li><a href="#sommaire">SOMMAIRE</a></li>
-            <li><a href="#Page1">ORGANISATION</a></li>
-            <li><a href="#Page2">COMMERCE</a></li>
-            <li><a href="#PGI" class="PGI4">PGI</a></li>
-          </ul>
-        </div>
-        <img src="./img/menu.png" alt="Menu" class="menuhb"/>
-      </nav>
-    </div>
-    </div>
-    <script>
-      const menuHamburger = document.querySelector(".menuhb")
-      const navLinks = document.querySelector(".navlist")
-
-      menuHamburger.addEventListener('click',()=>{
-      navLinks.classList.toggle('mobile-menu')
-      })
-    </script>
     <div class="main">
       <section class="pdg">
         <section class="pdgfond">
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="DOSSIERDESTAGE" style="text-align: center">
-          <h1>DOSSIER DE STAGE</h1>
-          <div class="MAIRIEDECUERS">
-            <h2>MAIRIE DE CUERS</h2>
+          <div class="navbar" id="accueil">
+            <nav class="navlien">
+              <a href="#accueil"><strong>DOSSIER DE STAGE</strong></a>
+              <div class="navlist">
+                <ul>
+                  <li><a href="#sommaire">SOMMAIRE</a></li>
+                  <li><a href="#Page1">ORGANISATION</a></li>
+                  <li><a href="#Page2">COMMERCE</a></li>
+                  <li><a href="#PGI" class="PGI4">PGI</a></li>
+                </ul>
+              </div>
+              <img src="./img/menu.png" alt="Menu" class="menuhb"/>
+            </nav>
           </div>
-        </div>
+          </div>
+          <script>
+            const menuHamburger = document.querySelector(".menuhb")
+            const navLinks = document.querySelector(".navlist")
+      
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+          </script>
+          <div class="DOSSIERDESTAGE" style="text-align: center">
+            <h1>DOSSIER DE STAGE</h1>
+            <div class="MAIRIEDECUERS">
+              <h2>MAIRIE DE CUERS</h2>
+            </div>
+          </div>
+          <section class="pdgfondimg"></section>
         </section>
       </section>
-      <div id="sommaire" class="separator"></div>
+      <div id="sommaire" class="separator1"></div>
       <main>
         <section>
           <div class="sommaire"
@@ -87,6 +87,7 @@
                 </li>
                 <br/>
                 <li><a href="#concurrents"><em>Concurrents</em></a></li>
+                <br>
                 <li>
                   <a href="#communication"><em>Politique de Communication</em></a>
                 </li>
@@ -142,27 +143,19 @@
                   <div class="box"><strong>Communication</strong></div>
               </div>
               <div class="level">
-                  <div class="box"><strong>Direction des Services Techniques</strong></div>
-                  <div class="box"><strong>Direction de l'Aménagement et du Développement du Territoire</strong></div>
+                  <!-- <div class="box"><strong>Direction des Services Techniques</strong></div>
+                  <div class="box"><strong>Direction de l'Aménagement et du Développement du Territoire</strong></div> -->
                   <div class="box sublevel">
                       <div><strong>Direction Proximité</strong><br><div class="stage"><em>Ellen BRAHIMI</em></div></div>
                       <div class="sublevel">
-                          <div class="box"><strong>Stagiaire</strong><br><div class="stage"><em>Mehdi AAYYADI</em></div></div>
+                          <div class="box"><strong>Service <br> à la population responsable</strong><br><div class="stage"><em>Corinne MENICONI</em></div></div>
                           <div class="box"><strong>Cimetière</strong><br><em>Cécile BOURGERY</em></div>
                           <div class="box"><strong>Elections</strong><br><em>Mireille BASSO</em></div>
-                      </div>
-                  </div>
-                  <div class="box"><strong>Direction des Ressources Humaines</strong></div>
-                  <div class="box"><strong>Direction des Ressources Financières et de la Démarche Qualité</strong></div>
-                  <div class="box sublevel">
-                      <div><strong>Direction de l'Administration Générales et de l'Achat</strong></div>
-                      <div class="box sublevel">
-                          <div><strong>Service à la population responsable</strong><br><em>Corinne MENICONI</em></div>
-                          <div class="sublevel">
-                              <div class="box"><strong>Service Accueil</strong></div>
-                              <div class="box"><strong>Etat civil</strong></div>
-                              <div class="box"><strong>Service Allo Mairie</strong></div>
-                          </div>
+                          <div class="box"><strong>Service Accueil</strong><br><em>Majid BENMOUSSA</em></div>
+                          <div class="box"><strong>Etat civil</strong><br><em>Pascale MELOUKA <br>Nathalie MENAND</em></div>
+                          <div class="box"><strong>Service Allo Mairie</strong><br><em>Mireille LEHEUX<br>Saliha BENMOUSSA
+                          </em></div>
+                          <div class="box"><strong>Stagiaire</strong><br><div class="stage"><em>Mehdi AAYYADI</em></div></div>
                       </div>
                   </div>
               </div>
@@ -613,7 +606,7 @@
                     <a
                       href="https://www.instagram.com/ville_de_cuers_/"
                       target="blank"
-                      >@ville_de_cuers_</a
+                       class="Instagram">@ville_de_cuers_</a
                     >, etc. Elle utilise ces plateformes pour partager des
                     informations, des actualités, des événements, des photos et
                     des vidéos, favorisant ainsi l'engagement et l'interaction
