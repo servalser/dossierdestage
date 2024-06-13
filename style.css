@@ -203,7 +203,7 @@ h1{
     width: auto;
 }
 body{
-    background-color: rgb(255, 248, 235);
+    background: linear-gradient(to bottom right,#fff8eb, #eddcbc);
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
     text-align:justify;
