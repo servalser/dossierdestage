@@ -35,10 +35,6 @@ nav{
 }
 
 @media screen and (max-width: 800px) {
-    .DOSSIERDESTAGE{
-        font-size: 1em
-    }
-    
     main{
         margin: 0 5%;
     }
@@ -207,7 +203,7 @@ h1{
     width: auto;
 }
 body{
-    background: linear-gradient(to bottom right,#fff8eb, #eddcbc);
+    background: linear-gradient(to bottom right,#fff8eb, #e1cfaa);
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
     text-align:justify;
@@ -459,11 +455,11 @@ th, td {
     border-radius: 30px;
     padding: 0 auto;
 }
-.lienbug{
-    position: relative;
+.lienbug h4{
+    position:relative;
 }
 footer{
-    background-color: rgb(241, 220, 177);
+    background: linear-gradient(#d6c8ac, #e3d2b1);
     margin: 0 auto;
     padding: 2px;
     font-family: "Raleway", sans-serif;
