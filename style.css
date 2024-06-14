@@ -203,7 +203,7 @@ h1{
     width: auto;
 }
 body{
-    background: linear-gradient(to bottom right,#fff8eb, #e1cfaa);
+    background: linear-gradient(170deg, rgba(255,248,235,1) 0%, rgba(236,225,203,1) 38%, rgba(255,246,211,1) 100%);
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
     text-align:justify;
@@ -357,7 +357,6 @@ iframe{
     padding: 0 auto;
 }
 .tableau{
-    position: flex;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -366,7 +365,9 @@ iframe{
     color: rgb(73, 55, 34);
 }
 table {
-    width: 100%;
+    position: flex;
+    justify-content: center;
+    max-width: 100%;
     border-collapse: collapse;
     font-family: "Raleway", sans-serif;
     color: rgb(73, 55, 34);
@@ -459,7 +460,7 @@ th, td {
     position:relative;
 }
 footer{
-    background: linear-gradient(#d6c8ac, #e3d2b1);
+    background: linear-gradient(0deg, rgba(231,218,192,1) 0%, rgba(227,210,177,0) 93%);
     margin: 0 auto;
     padding: 2px;
     font-family: "Raleway", sans-serif;
@@ -468,6 +469,7 @@ footer{
 .footer{
     font-weight: 450;
     color: rgb(73, 55, 34);
+    line-height: 25px;
 }
 .separator1{
     height: 2px;
