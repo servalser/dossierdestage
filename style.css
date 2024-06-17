@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+* ::selection{
+    background:rgba(154, 220, 255, 0.671);
+    color: rgb(28, 20, 12);
+}
 a strong{
     font-size: large;
     font-weight: 750;
@@ -14,6 +18,7 @@ a strong{
     width:100%;
 }
 nav{
+    z-index: 1;
     min-height: 50px;
     position: relative;
     padding: 15px;
@@ -33,8 +38,43 @@ nav{
     top: 15%;
     width: 35px;
 }
-
 @media screen and (max-width: 800px) {
+    table{
+        z-index: 2;
+    }
+
+    .tableau1 th, .tableau1 td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .tableau1 thead {
+        display: none;
+    }
+    
+    .tableau1 tr {
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .tableau1 tr td {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border: 5px solid rgb(73, 55, 34);
+        position: relative;
+    }
+    
+    .tableau1 tr td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
     main{
         margin: 0 5%;
     }
@@ -43,6 +83,7 @@ nav{
     }
     nav{
         padding: 0;
+        z-index: 1;
     }
     .navbar .menuhb{
         display: block;
@@ -87,6 +128,7 @@ nav{
         top: 15px;
     }
 }
+
 .navbar .navlist ul{
     display: flex;
     justify-content: space-between;
@@ -203,7 +245,7 @@ h1{
     width: auto;
 }
 body{
-    background: linear-gradient(170deg, rgba(255,248,235,1) 0%, rgba(236,225,203,1) 38%, rgba(255,246,211,1) 100%);
+    background: linear-gradient(to bottom right,#fff8eb, #e1cfaa);
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
     text-align:justify;
@@ -357,6 +399,7 @@ iframe{
     padding: 0 auto;
 }
 .tableau{
+    position: flex;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -365,9 +408,7 @@ iframe{
     color: rgb(73, 55, 34);
 }
 table {
-    position: flex;
-    justify-content: center;
-    max-width: 100%;
+    width: 100%;
     border-collapse: collapse;
     font-family: "Raleway", sans-serif;
     color: rgb(73, 55, 34);
@@ -460,7 +501,7 @@ th, td {
     position:relative;
 }
 footer{
-    background: linear-gradient(0deg, rgba(231,218,192,1) 0%, rgba(227,210,177,0) 93%);
+    background: linear-gradient(#d6c8ac, #e3d2b1);
     margin: 0 auto;
     padding: 2px;
     font-family: "Raleway", sans-serif;
@@ -469,7 +510,6 @@ footer{
 .footer{
     font-weight: 450;
     color: rgb(73, 55, 34);
-    line-height: 25px;
 }
 .separator1{
     height: 2px;
@@ -486,4 +526,7 @@ footer{
     background:rgb(241, 220, 177);
     margin: 30px 25% 30px 25%;
     border-radius: 8px;
+}
+section{
+    margin: 5px auto;
 }
