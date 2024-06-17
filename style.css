@@ -39,25 +39,30 @@ nav{
     width: 35px;
 }
 @media screen and (max-width: 800px) {
-    table{
+    h1{
+        font-size: 100%;
+    }
+
+    table {
         z-index: 2;
     }
 
-    .tableau1 th, .tableau1 td {
+    .tableau1 th, 
+    .tableau1 td, 
+    .tableau1 tr {
         display: block;
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .tableau1 thead {
         display: none;
     }
-    
+
     .tableau1 tr {
-        display: block;
         margin-bottom: 30px;
     }
-    
+
     .tableau1 tr td {
         display: flex;
         justify-content: space-between;
@@ -65,7 +70,7 @@ nav{
         border: 5px solid rgb(73, 55, 34);
         position: relative;
     }
-    
+
     .tableau1 tr td:before {
         content: attr(data-label);
         position: absolute;
@@ -75,19 +80,21 @@ nav{
         white-space: nowrap;
         font-weight: bold;
     }
-    main{
+
+    main, 
+    .pdg {
         margin: 0 5%;
     }
-    .pdg{
-        margin: 0 5%;
-    }
-    nav{
+
+    nav {
         padding: 0;
         z-index: 1;
     }
-    .navbar .menuhb{
+
+    .navbar .menuhb {
         display: block;
     }
+
     .navlist {
         top: 0;
         left: 0;
@@ -102,15 +109,18 @@ nav{
         margin-left: -100%;
         transition: all 0.5s ease;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         margin-left: 0;
     }
+
     .navlist ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .navlist ul li a{
+
+    .navlist ul li a {
         position: relative;
         line-height: 350%;
         font-weight: 750;
@@ -119,15 +129,15 @@ nav{
         border: 5px solid rgb(73, 55, 34);
         padding: 5 15%;
         border-radius: 100px;
-        
     }
 
-    a strong{
+    a strong {
         position: absolute;
         left: 15px;
         top: 15px;
     }
 }
+
 
 .navbar .navlist ul{
     display: flex;
@@ -501,7 +511,7 @@ th, td {
     position:relative;
 }
 footer{
-    background: linear-gradient(#d6c8ac, #e3d2b1);
+    background: radial-gradient(#d6c8ac, #e3d2b1);
     margin: 0 auto;
     padding: 2px;
     font-family: "Raleway", sans-serif;
