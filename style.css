@@ -7,6 +7,10 @@
     background:rgba(154, 220, 255, 0.671);
     color: rgb(28, 20, 12);
 }
+strong{
+    font-size:14px;
+    font-weight: 750;
+}
 a strong{
     font-size: large;
     font-weight: 750;
@@ -145,6 +149,7 @@ nav{
 .navbar .navlist ul li{
     background: rgba(255, 235, 199, 0.319);
     margin: 0 30px;
+    list-style:none;
 }
 .navbar .navlien strong{
     background: rgba(255, 235, 199, 0.319);
@@ -239,6 +244,11 @@ strong{
 em{
     font-weight:250;
 }
+h5{
+    font-weight: 750;
+    font-size: 15px;
+    width: auto;
+}
 h4{
     font-weight: 700;
     width: auto;
@@ -260,20 +270,14 @@ body{
     text-align:justify;
     color: rgb(255, 248, 235);
 }
-.pdg{
+.main{
     background: url("./img/mairie18-modified-fotor-20240613114851.png") no-repeat center/cover;
     margin: 0;
     min-height: 100vh;
     max-height: 100vh;
     z-index: 1;
-    /* border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom: 10px solid rgb(73, 55, 34) ;
-    border-left: 10px solid rgb(73, 55, 34) ;
-    border-right: 10px solid rgb(73, 55, 34) ; */
 }
 .DOSSIERDESTAGE{
-    /* background-color: rgba(255, 248, 235, 0.774); */
     font-size: 3rem;
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
@@ -508,6 +512,9 @@ th, td {
 }
 .lienbug h4{
     position:relative;
+}
+ul li{
+    list-style:circle;
 }
 footer{
     background: radial-gradient(#d6c8ac, #e3d2b1);
